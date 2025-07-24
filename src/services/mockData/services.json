@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "name": "Emergency Pipe Repair",
+    "description": "24/7 emergency pipe repair services for burst pipes, leaks, and water damage prevention. Fast response time guaranteed.",
+    "icon": "Wrench",
+    "featured": true
+  },
+  {
+    "Id": 2,
+    "name": "Complete Repiping",
+    "description": "Full home repiping with modern materials. Replace old galvanized, copper, or polybutylene pipes with reliable PEX or copper systems.",
+    "icon": "Home",
+    "featured": true
+  },
+  {
+    "Id": 3,
+    "name": "Leak Detection",
+    "description": "Advanced leak detection technology to find hidden leaks in walls, slabs, and underground pipes without destructive digging.",
+    "icon": "Search",
+    "featured": false
+  },
+  {
+    "Id": 4,
+    "name": "Pipe Lining",
+    "description": "Trenchless pipe lining solutions that restore old pipes without excavation. Cost-effective alternative to full replacement.",
+    "icon": "Shield",
+    "featured": false
+  },
+  {
+    "Id": 5,
+    "name": "Water Line Repair",
+    "description": "Main water line repair and replacement services. From street to home, we handle all water service line issues.",
+    "icon": "Droplets",
+    "featured": true
+  },
+  {
+    "Id": 6,
+    "name": "Sewer Line Services",
+    "description": "Comprehensive sewer line repair, replacement, and cleaning services. Video inspection and trenchless solutions available.",
+    "icon": "ArrowDown",
+    "featured": false
+  }
+]

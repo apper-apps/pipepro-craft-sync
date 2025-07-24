@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "customerName": "Sarah Johnson",
+    "rating": 5,
+    "review": "PipePro MN saved us from a plumbing disaster! They responded to our emergency call within 30 minutes and had our burst pipe fixed professionally. Highly recommend their services to anyone in the Rochester area.",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 2,
+    "customerName": "Mike Thompson",
+    "rating": 5,
+    "review": "Excellent repiping job on our 1970s home. The team was professional, clean, and completed the work on schedule. Our water pressure is amazing now, and we have peace of mind with the new pipes.",
+    "date": "2024-01-10"
+  },
+  {
+    "Id": 3,
+    "customerName": "Linda Rodriguez",
+    "rating": 5,
+    "review": "Outstanding service from start to finish. They found a hidden leak that other plumbers missed using their advanced detection equipment. Saved us thousands in potential water damage. True professionals!",
+    "date": "2024-01-08"
+  },
+  {
+    "Id": 4,
+    "customerName": "David Miller",
+    "rating": 5,
+    "review": "I called PipePro MN for an emergency on a Sunday evening, and they actually answered! Had someone at my house within an hour. Fair pricing and quality work. Will definitely use them again.",
+    "date": "2024-01-05"
+  },
+  {
+    "Id": 5,
+    "customerName": "Jennifer Walsh",
+    "rating": 5,
+    "review": "The trenchless pipe lining service was incredible. They fixed our sewer line without tearing up our beautiful landscaping. The technology is amazing and the results are perfect. Worth every penny!",
+    "date": "2024-01-02"
+  }
+]
