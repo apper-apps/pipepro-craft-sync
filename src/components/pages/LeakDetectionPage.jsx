@@ -11,7 +11,7 @@ const LeakDetectionPage = () => {
     name: "Leak Detection",
     description: "Advanced leak detection technology to find hidden leaks without destructive digging.",
     detailedDescription: "Discover hidden leaks before they cause major damage with our advanced leak detection services. Using state-of-the-art electronic equipment, thermal imaging, and acoustic detection technology, we can locate leaks behind walls, under slabs, and underground without destructive excavation. Early detection saves thousands in potential water damage and reduces water bills.",
-    heroImage: "/images/services/leak-detection-hero.jpg",
+heroImage: "/images/services/leak-detection-hero.jpg",
     images: [
       "/images/services/thermal-imaging.jpg",
       "/images/services/electronic-detection.jpg",

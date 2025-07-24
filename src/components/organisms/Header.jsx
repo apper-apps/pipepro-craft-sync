@@ -7,12 +7,26 @@ import MobileMenu from "@/components/molecules/MobileMenu";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
+  // Check if we're on the home page
+  const isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
 
   const navigationItems = [
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" }
+    { label: "Home", href: "/", type: "link" },
+    { label: "Services", href: "#services", type: "dropdown" },
+    { label: "About", href: "#about", type: "anchor" },
+    { label: "Testimonials", href: "#testimonials", type: "anchor" },
+    { label: "Contact", href: "#contact", type: "anchor" }
+  ];
+
+  const serviceItems = [
+    { label: "Emergency Pipe Repair", href: "/emergency-pipe-repair", icon: "AlertTriangle" },
+    { label: "Complete Repiping", href: "/complete-repiping", icon: "Home" },
+    { label: "Leak Detection", href: "/leak-detection", icon: "Search" },
+    { label: "Water Line Repair", href: "/water-line-repair", icon: "Droplets" },
+    { label: "Sewer Line Services", href: "/sewer-line-services", icon: "ArrowDown" },
+    { label: "Pipe Lining", href: "/pipe-lining", icon: "Shield" }
   ];
 
   useEffect(() => {
@@ -24,11 +38,34 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavClick = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (item) => {
+    if (item.type === "link") {
+      window.location.href = item.href;
+    } else if (item.type === "anchor") {
+      if (isHomePage) {
+        const element = document.querySelector(item.href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // Navigate to home page with anchor
+        window.location.href = `/${item.href}`;
+      }
+    } else if (item.type === "dropdown") {
+      if (isHomePage) {
+        const element = document.querySelector(item.href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        window.location.href = `/${item.href}`;
+      }
     }
+  };
+
+  const handleServiceClick = (serviceHref) => {
+    window.location.href = serviceHref;
+    setIsServicesOpen(false);
   };
 
   const handleCallClick = () => {
@@ -50,7 +87,7 @@ const Header = () => {
         <div className="container-max">
           <div className="flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.location.href = '/'}>
               <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-700 rounded-full flex items-center justify-center">
                 <ApperIcon name="Wrench" className="w-6 h-6 text-white" />
               </div>
@@ -65,14 +102,53 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navigationItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => handleNavClick(item.href)}
-                  className="text-secondary-700 hover:text-primary font-medium transition-colors duration-200 relative group"
-                >
-                  {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
-                </button>
+                <div key={item.href} className="relative">
+                  {item.type === "dropdown" ? (
+                    <div 
+                      className="relative"
+                      onMouseEnter={() => setIsServicesOpen(true)}
+                      onMouseLeave={() => setIsServicesOpen(false)}
+                    >
+                      <button
+                        onClick={() => handleNavClick(item)}
+                        className="text-secondary-700 hover:text-primary font-medium transition-colors duration-200 relative group flex items-center"
+                      >
+                        {item.label}
+                        <ApperIcon name="ChevronDown" className="w-4 h-4 ml-1" />
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+                      </button>
+                      
+                      {/* Services Dropdown */}
+                      {isServicesOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50"
+                        >
+                          {serviceItems.map((service) => (
+                            <button
+                              key={service.href}
+                              onClick={() => handleServiceClick(service.href)}
+                              className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors duration-200 flex items-center"
+                            >
+                              <ApperIcon name={service.icon} className="w-4 h-4 mr-3 text-primary" />
+                              <span className="text-gray-700 hover:text-primary">{service.label}</span>
+                            </button>
+                          ))}
+                        </motion.div>
+                      )}
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => handleNavClick(item)}
+                      className="text-secondary-700 hover:text-primary font-medium transition-colors duration-200 relative group"
+                    >
+                      {item.label}
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+                    </button>
+                  )}
+                </div>
               ))}
             </nav>
 
@@ -108,6 +184,8 @@ const Header = () => {
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
         navigationItems={navigationItems}
+        serviceItems={serviceItems}
+        isHomePage={isHomePage}
       />
     </>
   );

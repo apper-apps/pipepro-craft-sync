@@ -11,7 +11,7 @@ const WaterLineRepairPage = () => {
     name: "Water Line Repair",
     description: "Main water line repair and replacement services from street to home.",
     detailedDescription: "Keep your water flowing with professional water line repair and replacement services. We handle everything from the street connection to your home's main shutoff, including water meter issues, service line breaks, and pressure problems. Our experienced team works with city utilities and uses proper materials to ensure your water service meets all code requirements.",
-    heroImage: "/images/services/water-line-hero.jpg",
+heroImage: "/images/services/water-line-hero.jpg",
     images: [
       "/images/services/water-line-excavation.jpg",
       "/images/services/new-water-line.jpg",

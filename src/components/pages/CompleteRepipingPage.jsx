@@ -11,7 +11,7 @@ const CompleteRepipingPage = () => {
     name: "Complete Repiping",
     description: "Full home repiping with modern materials. Replace old galvanized, copper, or polybutylene pipes.",
     detailedDescription: "Transform your home's plumbing system with complete repiping services. We specialize in replacing outdated galvanized, copper, or problematic polybutylene pipes with modern, reliable PEX or copper systems. Our comprehensive repiping service improves water pressure, eliminates leaks, and adds value to your home while ensuring decades of reliable service.",
-    heroImage: "/images/services/repiping-hero.jpg",
+heroImage: "/images/services/repiping-hero.jpg",
     images: [
       "/images/services/old-pipes-removed.jpg",
       "/images/services/new-pex-installation.jpg",

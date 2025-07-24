@@ -11,7 +11,7 @@ const SewerLineServicesPage = () => {
     name: "Sewer Line Services",
     description: "Comprehensive sewer line repair, replacement, and cleaning services.",
     detailedDescription: "Resolve sewer line problems with our comprehensive sewer services. From routine cleaning and video inspections to complete sewer line replacement, we handle all aspects of sewer system maintenance and repair. Using modern equipment and techniques including trenchless technology, we can solve sewer issues with minimal disruption to your property.",
-    heroImage: "/images/services/sewer-line-hero.jpg",
+heroImage: "/images/services/sewer-line-hero.jpg",
     images: [
       "/images/services/sewer-camera-inspection.jpg",
       "/images/services/sewer-cleaning.jpg",

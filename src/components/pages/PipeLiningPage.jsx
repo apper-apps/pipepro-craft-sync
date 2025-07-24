@@ -11,7 +11,7 @@ const PipeLiningPage = () => {
     name: "Pipe Lining",
     description: "Trenchless pipe lining solutions that restore old pipes without excavation.",
     detailedDescription: "Restore your pipes without the mess and expense of excavation with our trenchless pipe lining services. This innovative technology installs a new pipe liner inside existing pipes, creating a seamless, durable pipe within a pipe. Perfect for sewer lines, water mains, and other underground piping that would be costly and disruptive to replace conventionally.",
-    heroImage: "/images/services/pipe-lining-hero.jpg",
+heroImage: "/images/services/pipe-lining-hero.jpg",
     images: [
       "/images/services/trenchless-equipment.jpg",
       "/images/services/pipe-liner-material.jpg",

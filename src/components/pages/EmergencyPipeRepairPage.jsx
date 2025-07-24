@@ -11,7 +11,7 @@ const EmergencyPipeRepairPage = () => {
     name: "Emergency Pipe Repair",
     description: "24/7 emergency pipe repair services for burst pipes, leaks, and water damage prevention.",
     detailedDescription: "When pipe emergencies strike, you need immediate professional help. Our emergency pipe repair service provides rapid response to burst pipes, major leaks, and water damage situations. Available 24/7, our licensed technicians arrive equipped with modern tools and materials to stop leaks fast and prevent costly water damage to your property.",
-    heroImage: "/images/services/emergency-repair-hero.jpg",
+heroImage: "/images/services/emergency-repair-hero.jpg",
     images: [
       "/images/services/emergency-tools.jpg",
       "/images/services/burst-pipe-before.jpg", 
