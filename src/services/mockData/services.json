@@ -3,42 +3,348 @@
     "Id": 1,
     "name": "Emergency Pipe Repair",
     "description": "24/7 emergency pipe repair services for burst pipes, leaks, and water damage prevention. Fast response time guaranteed.",
+    "detailedDescription": "When pipe emergencies strike, you need immediate professional help. Our emergency pipe repair service provides rapid response to burst pipes, major leaks, and water damage situations. Available 24/7, our licensed technicians arrive equipped with modern tools and materials to stop leaks fast and prevent costly water damage to your property.",
     "icon": "Wrench",
-    "featured": true
+    "featured": true,
+    "slug": "emergency-pipe-repair",
+    "images": [
+      "/images/services/emergency-repair-hero.jpg",
+      "/images/services/emergency-tools.jpg",
+      "/images/services/burst-pipe-before.jpg",
+      "/images/services/burst-pipe-after.jpg",
+      "/images/services/emergency-truck.jpg",
+      "/images/services/water-damage-prevention.jpg"
+    ],
+    "heroImage": "/images/services/emergency-repair-hero.jpg",
+    "process": [
+      {
+        "step": 1,
+        "title": "Emergency Call Response",
+        "description": "Call us 24/7 and we'll dispatch a technician to your location within 1 hour.",
+        "icon": "Phone"
+      },
+      {
+        "step": 2,
+        "title": "Damage Assessment",
+        "description": "Our technician will assess the damage and shut off water to prevent further issues.",
+        "icon": "Search"
+      },
+      {
+        "step": 3,
+        "title": "Immediate Repair",
+        "description": "We perform emergency repairs using professional-grade materials and techniques.",
+        "icon": "Wrench"
+      },
+      {
+        "step": 4,
+        "title": "System Testing",
+        "description": "We test the repair and ensure your plumbing system is functioning properly.",
+        "icon": "CheckCircle"
+      }
+    ],
+    "benefits": [
+      "24/7 emergency availability",
+      "1-hour response time guarantee",
+      "Licensed and insured technicians",
+      "Modern repair techniques and materials",
+      "Water damage prevention",
+      "Upfront pricing with no hidden fees",
+      "Warranty on all emergency repairs",
+      "Advanced leak detection equipment"
+    ],
+    "pricing": {
+      "startingPrice": "$150",
+      "description": "Emergency service call starting at $150, with repair costs based on materials and labor needed."
+    }
   },
   {
     "Id": 2,
     "name": "Complete Repiping",
     "description": "Full home repiping with modern materials. Replace old galvanized, copper, or polybutylene pipes with reliable PEX or copper systems.",
+    "detailedDescription": "Transform your home's plumbing system with complete repiping services. We specialize in replacing outdated galvanized, copper, or problematic polybutylene pipes with modern, reliable PEX or copper systems. Our comprehensive repiping service improves water pressure, eliminates leaks, and adds value to your home while ensuring decades of reliable service.",
     "icon": "Home",
-    "featured": true
+    "featured": true,
+    "slug": "complete-repiping",
+    "images": [
+      "/images/services/repiping-hero.jpg",
+      "/images/services/old-pipes-removed.jpg",
+      "/images/services/new-pex-installation.jpg",
+      "/images/services/copper-pipe-installation.jpg",
+      "/images/services/repiping-progress.jpg",
+      "/images/services/finished-installation.jpg"
+    ],
+    "heroImage": "/images/services/repiping-hero.jpg",
+    "process": [
+      {
+        "step": 1,
+        "title": "Home Inspection",
+        "description": "Comprehensive evaluation of your existing plumbing system and water pressure testing.",
+        "icon": "Home"
+      },
+      {
+        "step": 2,
+        "title": "Custom Design",
+        "description": "We create a detailed repiping plan tailored to your home's specific layout and needs.",
+        "icon": "FileText"
+      },
+      {
+        "step": 3,
+        "title": "Professional Installation",
+        "description": "Our certified technicians install new pipes with minimal disruption to your daily routine.",
+        "icon": "Settings"
+      },
+      {
+        "step": 4,
+        "title": "Quality Testing",
+        "description": "Thorough pressure testing and system inspection to ensure optimal performance.",
+        "icon": "CheckCircle"
+      }
+    ],
+    "benefits": [
+      "Improved water pressure throughout home",
+      "Elimination of recurring leaks",
+      "Modern PEX or copper materials",
+      "Increased home value",
+      "25-year warranty on materials",
+      "Minimal wall damage during installation",
+      "Lead-free, safe drinking water",
+      "Energy efficiency improvements"
+    ],
+    "pricing": {
+      "startingPrice": "$3,500",
+      "description": "Complete home repiping starting at $3,500 for average-sized homes, with pricing based on square footage and pipe material selection."
+    }
   },
   {
     "Id": 3,
     "name": "Leak Detection",
     "description": "Advanced leak detection technology to find hidden leaks in walls, slabs, and underground pipes without destructive digging.",
+    "detailedDescription": "Discover hidden leaks before they cause major damage with our advanced leak detection services. Using state-of-the-art electronic equipment, thermal imaging, and acoustic detection technology, we can locate leaks behind walls, under slabs, and underground without destructive excavation. Early detection saves thousands in potential water damage and reduces water bills.",
     "icon": "Search",
-    "featured": false
+    "featured": false,
+    "slug": "leak-detection",
+    "images": [
+      "/images/services/leak-detection-hero.jpg",
+      "/images/services/thermal-imaging.jpg",
+      "/images/services/electronic-detection.jpg",
+      "/images/services/underground-leak.jpg",
+      "/images/services/slab-leak-detection.jpg",
+      "/images/services/leak-detection-equipment.jpg"
+    ],
+    "heroImage": "/images/services/leak-detection-hero.jpg",
+    "process": [
+      {
+        "step": 1,
+        "title": "Initial Assessment",
+        "description": "We evaluate symptoms and perform preliminary testing to narrow down leak locations.",
+        "icon": "ClipboardList"
+      },
+      {
+        "step": 2,
+        "title": "Electronic Detection",
+        "description": "Advanced electronic equipment pinpoints exact leak locations without excavation.",
+        "icon": "Zap"
+      },
+      {
+        "step": 3,
+        "title": "Thermal Imaging",
+        "description": "Infrared cameras detect temperature variations indicating hidden water leaks.",
+        "icon": "Eye"
+      },
+      {
+        "step": 4,
+        "title": "Precise Location",
+        "description": "We mark exact leak locations and provide detailed repair recommendations.",
+        "icon": "MapPin"
+      }
+    ],
+    "benefits": [
+      "Non-destructive leak detection",
+      "Advanced electronic equipment",
+      "Thermal imaging technology",
+      "Acoustic leak detection",
+      "Precise leak location marking",
+      "Prevention of major water damage",
+      "Reduced water bills",
+      "Detailed inspection reports"
+    ],
+    "pricing": {
+      "startingPrice": "$275",
+      "description": "Professional leak detection service starting at $275, with pricing based on property size and detection complexity."
+    }
   },
   {
     "Id": 4,
     "name": "Pipe Lining",
     "description": "Trenchless pipe lining solutions that restore old pipes without excavation. Cost-effective alternative to full replacement.",
+    "detailedDescription": "Restore your pipes without the mess and expense of excavation with our trenchless pipe lining services. This innovative technology installs a new pipe liner inside existing pipes, creating a seamless, durable pipe within a pipe. Perfect for sewer lines, water mains, and other underground piping that would be costly and disruptive to replace conventionally.",
     "icon": "Shield",
-    "featured": false
+    "featured": false,
+    "slug": "pipe-lining",
+    "images": [
+      "/images/services/pipe-lining-hero.jpg",
+      "/images/services/trenchless-equipment.jpg",
+      "/images/services/pipe-liner-material.jpg",
+      "/images/services/lining-process.jpg",
+      "/images/services/before-lining.jpg",
+      "/images/services/after-lining.jpg"
+    ],
+    "heroImage": "/images/services/pipe-lining-hero.jpg",
+    "process": [
+      {
+        "step": 1,
+        "title": "Video Inspection",
+        "description": "Camera inspection to assess pipe condition and determine if lining is suitable.",
+        "icon": "Video"
+      },
+      {
+        "step": 2,
+        "title": "Pipe Preparation",
+        "description": "Cleaning and preparation of existing pipes to ensure proper liner adhesion.",
+        "icon": "Brush"
+      },
+      {
+        "step": 3,
+        "title": "Liner Installation",
+        "description": "Insertion and curing of the new pipe liner using specialized trenchless equipment.",
+        "icon": "ArrowRight"
+      },
+      {
+        "step": 4,
+        "title": "Quality Verification",
+        "description": "Final inspection to ensure the new liner is properly installed and functioning.",
+        "icon": "CheckCircle"
+      }
+    ],
+    "benefits": [
+      "No excavation required",
+      "50+ year liner lifespan",
+      "Cost-effective pipe restoration",
+      "Minimal landscape disruption",
+      "Improved pipe flow capacity",
+      "Root intrusion prevention",
+      "Environmentally friendly solution",
+      "Faster completion than replacement"
+    ],
+    "pricing": {
+      "startingPrice": "$200",
+      "description": "Trenchless pipe lining starting at $200 per linear foot, with pricing based on pipe diameter and access complexity."
+    }
   },
   {
     "Id": 5,
     "name": "Water Line Repair",
     "description": "Main water line repair and replacement services. From street to home, we handle all water service line issues.",
+    "detailedDescription": "Keep your water flowing with professional water line repair and replacement services. We handle everything from the street connection to your home's main shutoff, including water meter issues, service line breaks, and pressure problems. Our experienced team works with city utilities and uses proper materials to ensure your water service meets all code requirements.",
     "icon": "Droplets",
-    "featured": true
+    "featured": true,
+    "slug": "water-line-repair",
+    "images": [
+      "/images/services/water-line-hero.jpg",
+      "/images/services/water-line-excavation.jpg",
+      "/images/services/new-water-line.jpg",
+      "/images/services/water-meter-connection.jpg",
+      "/images/services/trenchless-water-line.jpg",
+      "/images/services/water-line-testing.jpg"
+    ],
+    "heroImage": "/images/services/water-line-hero.jpg",
+    "process": [
+      {
+        "step": 1,
+        "title": "Service Line Inspection",
+        "description": "We locate and assess your water service line from street to home.",
+        "icon": "Search"
+      },
+      {
+        "step": 2,
+        "title": "Permit & Coordination",
+        "description": "We handle all permits and coordinate with local utilities as needed.",
+        "icon": "FileCheck"
+      },
+      {
+        "step": 3,
+        "title": "Professional Installation",
+        "description": "Expert installation of new water lines using approved materials and methods.",
+        "icon": "Settings"
+      },
+      {
+        "step": 4,
+        "title": "Pressure Testing",
+        "description": "Thorough testing and inspection to ensure proper water pressure and flow.",
+        "icon": "Gauge"
+      }
+    ],
+    "benefits": [
+      "Full water service restoration",
+      "City utility coordination",
+      "Proper permit handling",
+      "Code-compliant installation",
+      "Improved water pressure",
+      "Modern pipe materials",
+      "Trenchless options available",
+      "Warranty on all work"
+    ],
+    "pricing": {
+      "startingPrice": "$1,200",
+      "description": "Water line repair starting at $1,200, with full replacement pricing based on distance from street and excavation requirements."
+    }
   },
   {
     "Id": 6,
     "name": "Sewer Line Services",
     "description": "Comprehensive sewer line repair, replacement, and cleaning services. Video inspection and trenchless solutions available.",
+    "detailedDescription": "Resolve sewer line problems with our comprehensive sewer services. From routine cleaning and video inspections to complete sewer line replacement, we handle all aspects of sewer system maintenance and repair. Using modern equipment and techniques including trenchless technology, we can solve sewer issues with minimal disruption to your property.",
     "icon": "ArrowDown",
-    "featured": false
+    "featured": false,
+    "slug": "sewer-line-services",
+    "images": [
+      "/images/services/sewer-line-hero.jpg",
+      "/images/services/sewer-camera-inspection.jpg",
+      "/images/services/sewer-cleaning.jpg",
+      "/images/services/trenchless-sewer-repair.jpg",
+      "/images/services/sewer-excavation.jpg",
+      "/images/services/sewer-line-replacement.jpg"
+    ],
+    "heroImage": "/images/services/sewer-line-hero.jpg",
+    "process": [
+      {
+        "step": 1,
+        "title": "Video Inspection",
+        "description": "High-definition camera inspection to identify blockages, damage, and root intrusion.",
+        "icon": "Video"
+      },
+      {
+        "step": 2,
+        "title": "Problem Diagnosis",
+        "description": "Detailed analysis of sewer line condition and recommendation of best repair method.",
+        "icon": "FileSearch"
+      },
+      {
+        "step": 3,
+        "title": "Service Execution",
+        "description": "Professional cleaning, repair, or replacement using appropriate methods and equipment.",
+        "icon": "Tools"
+      },
+      {
+        "step": 4,
+        "title": "Final Verification",
+        "description": "Post-service inspection to ensure proper sewer flow and system functionality.",
+        "icon": "CheckCircle"
+      }
+    ],
+    "benefits": [
+      "HD video sewer inspection",
+      "Hydro-jetting cleaning",
+      "Root removal services",
+      "Trenchless repair options",
+      "Traditional excavation when needed",
+      "Preventive maintenance programs",
+      "Emergency sewer services",
+      "City sewer connection services"
+    ],
+    "pricing": {
+      "startingPrice": "$150",
+      "description": "Sewer line services starting at $150 for basic cleaning, with repair and replacement pricing based on method and scope of work."
+    }
   }
 ]

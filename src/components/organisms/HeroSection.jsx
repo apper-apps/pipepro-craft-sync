@@ -13,16 +13,24 @@ const HeroSection = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+};
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700">
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/images/hero/plumbing-hero-bg.jpg')`
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-700/80"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
       </div>
 
+      {/* Hero Content */}
       {/* Hero Content */}
       <div className="relative z-10 container-max px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
